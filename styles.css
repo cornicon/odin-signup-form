@@ -1,4 +1,21 @@
+body {
+    display: flex;
+    margin: 0;
+}
+
 /* Just to test whether the stylesheet is linked */
 h1 {
     color: red;
+}
+
+.theme-section {
+    height: 100vh;
+    flex: 2;
+    background-image: url("./img/nikhil-kamble--ptiKhJRryw-unsplash.jpg");
+    background-size: contain;
+}
+
+.form-section {
+    flex: 5;
+    margin: 3rem;
 }
