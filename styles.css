@@ -24,15 +24,11 @@ body {
     color: white;
 }
 
-.form-section {
+.content-section {
     flex: 5;
     background-color: rgb(247, 243, 243);
     display: flex;
     flex-direction: column;
-}
-
-.form-section > * {
-    flex: 1;
 }
 
 header {
@@ -46,7 +42,7 @@ header p {
     font-weight: bold;
 }
 
-form {
+.form-section {
     background-color: white;
     box-shadow: 5px 5px 5px lightgray;
 }
@@ -55,7 +51,7 @@ form label {
     font-size:small;
 }
 
-.form-section > * {
+.content-section > * {
     padding: 2rem 3rem;
 }
 
@@ -67,6 +63,25 @@ form label {
 .form-pair > div {
     display: flex;
     flex-direction: column;
+}
+
+input {
+    font-size: large;
+    border: 2px solid #000;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
 }
 
 .logo-section {
