@@ -51,8 +51,22 @@ form {
     box-shadow: 5px 5px 5px lightgray;
 }
 
+form label {
+    font-size:small;
+}
+
 .form-section > * {
     padding: 2rem 3rem;
+}
+
+.form-pair {
+    display: flex;
+    gap: 3rem;
+}
+
+.form-pair > div {
+    display: flex;
+    flex-direction: column;
 }
 
 .logo-section {
