@@ -5,11 +5,17 @@ body {
 
 .theme-section {
     height: 100vh;
-    flex: 2;
+    flex: 3;
     background-image: url("./img/nikhil-kamble--ptiKhJRryw-unsplash.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment:inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-spacer {
+    flex: 1;
 }
 
 .footer {
@@ -53,6 +59,7 @@ form label {
 
 .content-section > * {
     padding: 2rem 3rem;
+    flex: 1;
 }
 
 .form-pair {
@@ -72,30 +79,27 @@ input {
     border-radius: 6px;
 }
 
-input:focus {
+form input:focus-within {
     border-color: blue;
 }
 
-input:valid {
-    border-color: green;
-}
-
-input:invalid {
-    border-color: red;
+.theme-section .flex-spacer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .logo-section {
-    height: 8rem;
+    height: 20vh;
     background-color: rgba(224, 219, 219, 0.337);
-    padding: 1rem;
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-top: 17vh;
+    gap: 2rem;
 }
 
 .logo {
-    height: 8rem;
+    height: 80%;
 }
 
 .logo-text {
@@ -119,4 +123,22 @@ input:invalid {
     color:rgb(93, 54, 7);
     font-size: larger;
     font-weight: bolder;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+.form-section form input:focus {
+    background-color: yellow;
+    color: red;
+    outline: 2px solid blue;
+}
+
+#password-error {
+    color: red;
 }
