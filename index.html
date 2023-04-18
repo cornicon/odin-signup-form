@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="theme-section">
-        <div class="flex-spacer">
+        <div class="flex-spacer">   
             <div class="logo-section">
                 <img class="logo"src="./img/odin-lined.png" alt="Company Logo">
                 <div class="logo-text">ODIN</div>
@@ -34,36 +34,36 @@
                 <div class="form-pair">  
                     <div>
                         <label for="first-name">First Name</label>                
-                        <input id="first-name" name="first-name" type="text" min="1" required/>
+                        <input id="first-name" name="first-name" type="text" minlength="3" placeholder="EX: Wayne" required/>
                     </div>
 
                     <div>
                         <label for="last-name">Last Name</label>                
-                        <input id="last-name" name="last-name" type="text" min="1" required/>
+                        <input id="last-name" name="last-name" type="text" minlength="3" placeholder="EX: Campbell" required/>
                     </div>
                 </div>
 
                 <div class="form-pair">  
                     <div>
                         <label for="email">Email</label>
-                        <input id="email" name="email" type="email" min="5" required/>
+                        <input id="email" name="email" type="email" min="5" placeholder="EX: email@domain.com" required/>
                     </div>
                     <div>
                         <label for="phone-number">Phone Number</label>
-                        <input id="phone-number" name="phone-number" type="tel" pattern="[0-9]{10}" required/>
+                        <input id="phone-number" name="phone-number" type="tel" pattern="[0-9]{10}" placeholder="10 digit # EX: <1234567890>" required/>
                     </div>
                 </div>
 
                 <div class="form-pair">  
                     <div>
                         <label for="password">Password</label>
-                        <input id="password" name="password" type="password" min="8" required/>
+                        <input id="password" name="password" type="password" min="8" placeholder="password" required/>
                         <div id="password-error"></div>
                     </div>
 
                     <div>
                         <label for="password-confirm">Confirm Password</label>
-                        <input id="password-confirm" name="password-confirm" min="8" type="password" required/>
+                        <input id="password-confirm" name="password-confirm" min="8" type="password" placeholder="password" required/>
                     </div>
                 </div>
         </div>
