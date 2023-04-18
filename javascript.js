@@ -7,13 +7,13 @@ function validatePassword() {
     {
         confirm_password.setCustomValidity("Passwords Don't Match");
         error_label.innerHTML = "* Passwords Don't Match";
-        password.style="border-color: red";
+        password.style="border-color: red; box-shadow: 0 0 10px red;";
     }
     else
     {
         confirm_password.setCustomValidity("");
         error_label.innerHTML = "";
-        password.style="border-color: green";
+        password.style="border-color: green; box-shadow: 0 0 10px green;";
     }
 }
 
