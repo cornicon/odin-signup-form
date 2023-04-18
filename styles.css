@@ -73,7 +73,7 @@ form label {
 }
 
 input {
-    font-size: large;
+    font-size: xx-large;
     border: 2px solid #000;
     margin-bottom: 15px;
     border-radius: 6px;
@@ -125,20 +125,21 @@ form input:focus-within {
     font-weight: bolder;
 }
 
-input:valid {
-    border-color: green;
+input:not(:focus):not(:placeholder-shown):invalid {
+    border-color: red;
 }
 
-input:invalid {
-    border-color: red;
+input:not(:focus):not(:placeholder-shown):valid {
+    border-color: green;
 }
 
 .form-section form input:focus {
     background-color: yellow;
     color: red;
-    outline: 2px solid blue;
+    border-color: blue;
 }
 
 #password-error {
+    padding: 0px;
     color: red;
 }
