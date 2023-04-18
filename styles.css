@@ -1,3 +1,8 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(./font/Norse-Bold.otf);
+}
+
 body {
     display: flex;
     margin: 0;
@@ -103,8 +108,9 @@ form input:focus-within {
 }
 
 .logo-text {
-    font-size: 6rem;
+    font-size: 8rem;
     color: white;
+    font-family: norse-bold, Georgia, 'Times New Roman', Times, serif;
 }
 
 .submit-section button {
