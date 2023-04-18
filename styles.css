@@ -127,16 +127,18 @@ form input:focus-within {
 
 input:not(:focus):not(:placeholder-shown):invalid {
     border-color: red;
+    box-shadow: 0 0 10px red;
 }
 
 input:not(:focus):not(:placeholder-shown):valid {
     border-color: green;
+    box-shadow: 0 0 10px green;
 }
 
 .form-section form input:focus {
-    background-color: yellow;
-    color: red;
+    outline: none !important;
     border-color: blue;
+    box-shadow: 0 0 10px blue;
 }
 
 #password-error {
